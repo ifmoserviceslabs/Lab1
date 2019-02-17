@@ -1,4 +1,4 @@
-    package com.ifmo.serviceslab1maven;
+package com.ifmo.serviceslab1maven;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -20,7 +20,7 @@ public class ConnectionUtil {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-        connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
+            connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
         } catch (SQLException ex) {
             Logger.getLogger(ConnectionUtil.class.getName()).log(Level.SEVERE, null, ex);
         }
